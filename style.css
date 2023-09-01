@@ -89,6 +89,10 @@ form button:hover{
     background-color: #5be7a9;
     color: white;
 }
+.complete_button_active{
+    background-color: #5be7a9;
+    color: white;
+}
 
 .remove_button{
     color: #ff6464;

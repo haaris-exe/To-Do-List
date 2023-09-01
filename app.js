@@ -13,6 +13,9 @@ filterOption.addEventListener("click", filterTodo);
 
 function addTodo(event) {
   event.preventDefault();
+  if (todoInput.value === "") {
+    return;
+  }
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
   const newTodo = document.createElement("li");
@@ -45,6 +48,7 @@ function handleDeleteCheck(event) {
   if (item.classList[0] === "complete_button") {
     const todo = item.parentElement;
     todo.classList.toggle("completed");
+    item.classList.toggle("complete_button_active");
   }
 }
 
